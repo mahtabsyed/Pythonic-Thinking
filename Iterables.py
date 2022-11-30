@@ -7,6 +7,7 @@
 
 # for in python is not same as for in C, its houdl be called for each as it iterates over an iterable
 # range in python 3 uses iterable
+from functools import partial
 for i in range(5):
     print(i)
 
@@ -31,7 +32,6 @@ for i, color in enumerate(colors):
 
 print("-----")
 
-
 # Looping over two collections, zip in python3 now returns an iterator
 names = ["raymond", "rachel", "matthew"]
 for name, color in zip(names, colors):
@@ -52,4 +52,29 @@ print("-----")
 
 # Custom sort order
 print(sorted(colors, key=len))
+print("-----")
+
+
+# Call a function until a sentinel value
+f = open("demo_file.txt", "r")
+
+# print(f.read(30))
+blocks = []
+for block in iter(partial(f.read, 32), ""):
+    blocks.append(block)
+
+print(blocks)
+print("-----")
+
+
+# Distinguishing multiple exit points in loops
+def find(seq, target):
+    for i, value in enumerate(seq):
+        if value == target:
+            break
+    else:
+        return -1
+    return i
+
+
 print("-----")

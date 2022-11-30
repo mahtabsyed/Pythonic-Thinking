@@ -1,0 +1,20 @@
+What’s New In Python 3.11
+Release
+3.11.0
+
+Date
+November 29, 2022
+
+Editor
+Pablo Galindo Salgado
+
+This article explains the new features in Python 3.11, compared to 3.10.
+
+For full details, see the changelog.
+
+Summary – Release highlights
+Python 3.11 is between 10-60% faster than Python 3.10. On average, we measured a 1.25x speedup on the standard benchmark suite. See Faster CPython for details.
+
+New syntax features:
+
+PEP 654: Exception Groups and except*
