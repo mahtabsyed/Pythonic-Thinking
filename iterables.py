@@ -8,8 +8,10 @@
 # for in python is not same as for in C, its houdl be called for each as it iterates over an iterable
 # range in python 3 uses iterable
 from functools import partial
+
 for i in range(5):
     print(i)
+
 
 print("-----")
 

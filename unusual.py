@@ -1,4 +1,3 @@
-
 # Partial function - allows one to derive a function with x parameters to a function with
 # fewer parameters and fixed values set for the more limited function.
 
