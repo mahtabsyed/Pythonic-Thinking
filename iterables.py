@@ -9,6 +9,7 @@
 # range in python 3 uses iterable
 from functools import partial
 
+
 for i in range(5):
     print(i)
 
