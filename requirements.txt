@@ -1,1 +1,2 @@
 numpy
+jupyter_contrib_nbextensions
